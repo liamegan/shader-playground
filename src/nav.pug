@@ -1,0 +1,6 @@
+- var items = [ {name: 'Index', url:'/index.pug'}, {name: 'Helix', url:'/helix.pug'} ]
+
+ul#nav
+  each item in items 
+    li
+      a(href=item.url)=item.name
